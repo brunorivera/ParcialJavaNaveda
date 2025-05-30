@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.parcialnaveda'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.h2database:h2:2.2.224' // H2
+    implementation 'org.slf4j:slf4j-api:2.0.13' // SLF4J API
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0' // Log4j core
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0' // Log4j + SLF4J
+    // Logging con Log4j y SLF4J
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    runtimeOnly 'org.slf4j:slf4j-log4j12:2.0.9'
+
+}
+
+application {
+    mainClass = 'main.Main'
+}

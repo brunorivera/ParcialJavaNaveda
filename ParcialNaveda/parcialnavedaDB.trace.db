@@ -1,0 +1,6 @@
+2025-05-27 09:06:58.102532-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ALUMNO" not found (this database is empty); SQL statement:
+SELECT * FROM alumno [42104-224]
+2025-05-27 09:08:18.447332-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ALUMNO" not found (this database is empty); SQL statement:
+INSERT INTO alumno (nombre, edad) VALUES (?, ?) [42104-224]
